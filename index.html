@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mingzat&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>história braba</title>
+    <style>
+        body {
+            background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d4e216e8-132b-4ee9-aded-e9fb9d7b800a/dg679i1-b6e249a2-69ea-4a84-86c0-40ebaa646821.jpg/v1/fill/w_1154,h_692,q_70,strp/cyberpunk_wallpaper_by_userx_12345_dg679i1-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Q0ZTIxNmU4LTEzMmItNGVlOS1hZGVkLWU5ZmI5ZDdiODAwYVwvZGc2NzlpMS1iNmUyNDlhMi02OWVhLTRhODQtODZjMC00MGViYWE2NDY4MjEuanBnIiwiaGVpZ2h0IjoiPD05NjAiLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC9kNGUyMTZlOC0xMzJiLTRlZTktYWRlZC1lOWZiOWQ3YjgwMGFcL3VzZXJ4LTEyMzQ1LTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.OFI1jvGdqS5f6kos08KwiOK3j_RSfOjcajRypfPZdQE);
+            color: antiquewhite;
+            font-family: "Mingzat", sans-serif;
+            text-align: center;
+            font-size: 50px;
+        }
+        button {
+            background-color: antiquewhite;
+            color: black;
+            font-family: "Oswald", sans-serif;
+            font-size: 20px;
+        }
+        .passo {
+            display: none;
+        }
+        .passo.ativo {
+            display: block;
+        }
+        /* Nova classe para o fundo medieval */
+        .medieval-background {
+            background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p3/7106640-fundo-medieval-silhueta-vazio-gratis-vetor.jpg'); /* Substitua pelo URL da imagem medieval */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0"> 
+            <p>Roberto Lanches, um ciborgue fumado em chip, estaria em um beco de Nova Eridu. Onde ele vai?</p>
+            <button class="btn-proximo" data-proximo="1">Pra direita 22</button>
+            <button class="btn-proximo" data-proximo="2">Pra esquerda</button>
+        </div>
+
+        <div class="passo" id="passo-1"> 
+            <p>Ao seguir pela direita, você encontra o mercador do RE4, e ele te oferece duas pílulas pela conta da casa.</p>
+            <button class="btn-proximo" data-proximo="3">Não aceitar</button>
+            <button class="btn-proximo" data-proximo="4">Aceitar</button>
+        </div>
+
+        <div class="passo" id="passo-3"> 
+            <p>Ao aceitar, você toma a pílula e entra em uma viagem tecno-espiritual, revendo todas as escolhas da sua vida.</p>
+            <button class="btn-proximo" data-proximo="5">Voltar ao início</button>
+        </div>
+
+        <div class="passo" id="passo-2"> 
+            <p>Ao seguir pela esquerda, você ignora o roteiro e começa a transcender os níveis de raciocínio humano.</p>
+            <button class="btn-proximo" data-proximo="4">Fim da história</button>
+        </div>
+
+        <div class="passo" id="passo-4"> 
+            <p>Você decidiu aceitar e, ao engolir a pílula, Roberto sente uma sensação de desmaterialização. Em um piscar de olhos, ele é transportado para um mundo medieval, cercado por castelos e cavaleiros.</p>
+            <button class="btn-proximo" data-proximo="6">Explorar o castelo</button>
+            <button class="btn-proximo" data-proximo="7">Ficar na aldeia</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Roberto, após sua jornada tecno-espiritual, decide voltar ao início, mas percebe que não há mais caminho de volta. A história continua em uma nova dimensão.</p>
+            <button class="btn-proximo" data-proximo="6">Explorar o castelo</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Roberto decide explorar o castelo. No interior, ele descobre um grande salão com uma mesa cheia de pergaminhos antigos e uma armadura reluzente. Um velho mago aparece e diz que ele foi escolhido para uma grande missão.</p>
+            <button class="btn-proximo" data-proximo="8">Aceitar a missão</button>
+            <button class="btn-proximo" data-proximo="9">Recusar e explorar mais</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Roberto opta por ficar na aldeia, vivendo uma vida tranquila entre os moradores. Ele ajuda com as tarefas diárias e aprende sobre a vida medieval, encontrando paz e propósito.</p>
+            <button class="btn-proximo" data-proximo="4">Fim da história</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>Roberto aceita a missão do mago. Ele se torna um herói lendário, desbravando terras misteriosas e lutando contra criaturas sombrias, trazendo prosperidade e segurança ao reino.</p>
+            <button class="btn-proximo" data-proximo="10">Celebrar o triunfo</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Roberto decide explorar mais e descobre vários segredos e mistérios ao redor do castelo, mas nunca encontra uma maneira de retornar ao seu antigo mundo. Ele se adapta e encontra novas aventuras.</p>
+            <button class="btn-proximo" data-proximo="10">Celebrar o triunfo</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>Independente de suas escolhas, Roberto vive uma vida rica em experiências e aventuras no mundo medieval, encerrando sua jornada com grandes histórias para contar.</p>
+            <button class="btn-proximo" data-proximo="0">Reiniciar história</button>
+        </div>
+
+    </main>
+    <script>
+        document.querySelectorAll('.btn-proximo').forEach(button => {
+            button.addEventListener('click', () => {
+                const nextId = button.getAttribute('data-proximo');
+                document.querySelectorAll('.passo').forEach(passo => passo.classList.remove('ativo'));
+                document.getElementById(`passo-${nextId}`).classList.add('ativo');
+
+                // Alterar o fundo para medieval se o próximo passo for 4 ou posterior
+                if (nextId >= '4') {
+                    document.body.classList.add('medieval-background');
+                } else {
+                    document.body.classList.remove('medieval-background');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
