@@ -96,20 +96,10 @@
         </div>
 
     </main>
-    <script>
-        document.querySelectorAll('.btn-proximo').forEach(button => {
-            button.addEventListener('click', () => {
-                const nextId = button.getAttribute('data-proximo');
-                document.querySelectorAll('.passo').forEach(passo => passo.classList.remove('ativo'));
-                document.getElementById(`passo-${nextId}`).classList.add('ativo');
 
-                if (nextId >= '4') {
-                    document.body.classList.add('medieval-background');
-                } else {
-                    document.body.classList.remove('medieval-background');
-                }
-            });
-        });
-    </script>
+    <script src="script.js"></script>
+
+   
+   
 </body>
 </html>
